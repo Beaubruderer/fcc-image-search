@@ -1,0 +1,16 @@
+.code-block {
+  background-color: grey;
+  color: white;
+  line-height: 25px;
+  padding: 5px 5px 5px 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: auto;
+  
+}

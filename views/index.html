@@ -1,0 +1,65 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+<div class="wrapper">
+
+  
+  <h1 class="title">FreeCodeCamp: Image Search Abstraction Layer</h1>
+
+  <h2>User Stories:</h2>
+
+  <ul>
+    <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+    
+    <li>I can paginate through the responses by adding a "?offset=2" parameter to the URL.</li>
+    
+    <li>I can get a list of the most recently submitted search strings</li>
+    
+  </ul>
+  
+    <h3>Search (with optional pagination)</h3>
+    
+    <div class="code-block">
+      
+      <p>https://hanging-wanderer.glitch.me/api/imagesearch/(your search term)?offset=(#)</p>
+      
+    </div>
+    
+<h3>Recent Searches</h3>
+    
+    <div class="code-block">
+      
+      <p>https://hanging-wanderer.glitch.me/api/latest/imagesearch/</p>
+      
+    </div>
+    
+    <h5>NOTE:  Due to use of Google CSE API, this microservice has a limit of 100 search queries per day</h5>
+  
+</div>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
